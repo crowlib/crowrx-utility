@@ -8,5 +8,9 @@
     },
     "unity": "6000.3",
     "description": "Utilities for CrowRx project.",
-    "category": "Scripting"
+    "category": "Scripting",
+    "dependencies": {
+        "com.crowlib.crowrx": "1.0.0",
+        "com.cysharp.zlinq": "1.5.4"
+    }
 }

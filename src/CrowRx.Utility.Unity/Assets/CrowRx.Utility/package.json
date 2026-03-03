@@ -1,6 +1,6 @@
 {
     "name": "com.crowlib.crowrx.utility",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "displayName": "CrowRx Utility",
     "author": {
         "name": "Hory",
@@ -10,7 +10,7 @@
     "description": "Utilities for CrowRx project.",
     "category": "Scripting",
     "dependencies": {
-        "com.crowlib.crowrx": "1.0.0",
+        "com.crowlib.crowrx": "1.0.2",
         "com.cysharp.zlinq": "1.5.4"
     }
 }

@@ -1,15 +1,12 @@
-﻿// ReSharper disable InconsistentNaming
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-
+using Unity.Scripting.LifecycleManagement;
 
 namespace CrowRx.Utility
 {
     public static class PhysicsUtility
     {
-        private static Dictionary<int, int> _masksByLayer;
-
+        [NoAutoStaticsCleanup] private static Dictionary<int, int> _masksByLayer;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void InitMasksByLayer()

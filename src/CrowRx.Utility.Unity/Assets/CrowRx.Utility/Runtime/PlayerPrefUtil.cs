@@ -1,16 +1,13 @@
-﻿// ReSharper disable InconsistentNaming
-
+﻿#if !UNITY_6000_6_OR_NEWER
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
-
 
 namespace CrowRx.Utility
 {
     public static class PlayerPrefUtil
     {
         private static BinaryFormatter _binaryFormatter;
-
 
         // serializableObject is any struct or class marked with [Serializable]
         public static void SaveObjectToPlayerPref(string prefKey, object serializableObject)
@@ -38,3 +35,4 @@ namespace CrowRx.Utility
         }
     }
 }
+#endif
